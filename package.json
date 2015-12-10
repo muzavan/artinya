@@ -1,0 +1,15 @@
+{
+  "title": "Artinya",
+  "name": "artinya",
+  "version": "0.0.1",
+  "description": "English to Bahasa Indonesia translation plugin for firefox. Just highlight the word you don't understand, right click and you find the meaning of the words.",
+  "main": "index.js",
+  "author": "Muhammad Reza Irvanda",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
