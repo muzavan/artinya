@@ -1,5 +1,6 @@
-var dict = {"a":"kb. huruf pertama dalam abjad Inggris. 2 angka yang baik sekali. 3 nada  A.   A- bomb bom atom.  A-1 ks. 1 kelas satu. 2 ulung.",
-"a la":"menurut , secara. a. carte menurut kartu makanan, boleh memesan satu demi satu. a. Hollywood secara Hollywood. a. king dilapisi dgn lombok hijau. chicken a. king ayam yang dilapisi dgn lombok hijau.",
+{
+"a":"kb. huruf pertama dalam abjad Inggris. 2 angka yang baik sekali. 3 nada  A.   A- bomb bom atom.  A-1 ks. 1 kelas satu. 2 ulung.",
+"a la, a la":"menurut , secara. a. carte menurut kartu makanan, boleh memesan satu demi satu. a. Hollywood secara Hollywood. a. king dilapisi dgn lombok hijau. chicken a. king ayam yang dilapisi dgn lombok hijau.",
 "a priori":"kk. berdasar teori daripada kenyataan yang sebenarnya.",
 "a.c.":"(alternating current) arus bolak-balik",
 "a.d.":"[Anno Domini] T.M. [Tarich Masehi] sesudah lahirnya Nabi Isa.",
@@ -23621,28 +23622,5 @@ var dict = {"a":"kb. huruf pertama dalam abjad Inggris. 2 angka yang baik sekali
 "zookeeper":"kb. penjaga/mandor kebun binatang.",
 "zoological":"ks. kehewanan, mengenai ilmu hewan. z. garden kebun binatang.",
 "zoologist":"kb. ahli ilmu hewan."
-};
-
-var selectionListener = function(){
-  var word = this.text.toLowerCase();
-  var arti = dict[word];
-  
-  //Memastikan arti kata ditemukan
-  arti = arti != undefined ? arti : "Arti kata tidak ditemukan";
-
-  var tmp  = window.document.createElement("div");
-  tmp.style.height = "100px";
-  tmp.style.width = "100px";
-
-  var childTmp = window.document.createTextNode("Uyeah");
-  tmp.appendChild(childTmp);
-  tmp.addEventListener("click",function(e){
-    delete tmp;
-  });
-};
-
-
-var selection = require("sdk/selection");
-selection.on("select",selectionListener)
-
-// TODO View Arti in Tooltips?
+  }
+}
